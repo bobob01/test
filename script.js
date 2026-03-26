@@ -6,7 +6,7 @@ context.scale(20, 20); // 遊戲邏輯單位為 1, 渲染時放大為 20px
 // --- 初始化接下來方塊畫布 ---
 const nextCanvas = document.getElementById('next');
 const nextContext = nextCanvas.getContext('2d');
-nextContext.scale(20, 20); // 同樣放大
+nextContext.scale(20, 20); // 同樣放大 
 
 // --- 遊戲定義 ---
 const ARENA_WIDTH = 12;
