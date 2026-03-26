@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>專業版俄羅斯方塊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="settings">
+            <h3>遊戲設定 (ms)</h3>
+            <label>DAS (延遲): <input type="number" id="das" value="170"></label>
+            <label>ARR (重複): <input type="number" id="arr" value="30"></label>
+            <label>SDF (軟落倍率): <input type="number" id="sdf" value="20"></label>
+            <p class="hint">按鍵說明：方向鍵移動/軟落，空格鍵硬落，Z/X 旋轉。</p>
+            <button id="start-btn">開始/重置</button>
+        </div>
+        <div class="game-container">
+            <div class="stats">分數: <span id="score">0</span></div>
+            <canvas id="tetris" width="240" height="400"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
